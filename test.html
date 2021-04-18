@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>test</title>
+</head>
+
+<body>
+    <div class="timer-container">
+        <h2 id="timer" class="timer"></h2>
+    </div>
+    <div id="q1" class="question">
+        <h3>Commonly used data types Do Not Include:</h3>
+        <div class="answers">
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">var</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">let</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">const</h4></button>
+            <button class="answer" id="correct" onClick="addAnswers(this.id)"><h4 id="">vab</h4></button>
+        </div>
+    </div>
+    <div id="q2" class="question">
+        <h3>The condition in an if/else statement is enclosed with ______</h3>
+        <div class="answers">
+            <button class="answer" id="correct" onClick="addAnswers(this.id)"><h4 id="">||</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">&&</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">>=</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">===</h4></button>
+        </div>
+    </div>
+
+    <div id="q3" class="question">
+        <h3>A very useful tool used during development  and debugging for printing content to the debugger is:</h3>
+        <div class="answers">
+            <button class="answer" id="correct" onClick="addAnswers(this.id)"><h4 id="">===</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">=</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">==</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">-</h4></button>
+        </div>
+    </div>
+    <div id="q4" class="question">
+        <h3>String value must be enclosed within _______ when being assigned to variables.</h3>
+        <div class="answers">
+            <button class="answer" id="correct" onClick="addAnswers(this.id)"><h4 id="">[]</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">{}</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">()</h4></button>
+            <button class="answer" id="incorrect" onClick="addAnswers(this.id)"><h4 id="">\/</h4></button>
+        </div>
+    </div>
+    <div class="results">
+        <h3 id="results"></h3>
+    </div>
+    <div class="leaderboard">
+        <h1>Recent Score: <span id="highScore"></span><span id="name"></span></h1>
+    </div>
+    <script src="assets/js/app.js">
+
+    </script>
+
+
+</body>
+
+</html>
