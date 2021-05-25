@@ -2,65 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <title>test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <div class="timer-container">
-        <h2 id="timer" class="timer"></h2>
-    </div>
-    <div id="q1" class="question">
-        <h3>Commonly used data types Do Not Include:</h3>
-        <div class="answers">
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">numbers</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">booleans</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">alerts</h4></button>
-            <button id="correct" onClick="addAnswers(this.id)"><h4 id="">strings</h4></button>
+    <header>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
         </div>
-    </div>
-    <div id="q2" class="question">
-        <h3>The condition in an if/else statement is enclosed with:</h3>
-        <div class="answers">
-            <button id="correct" onClick="addAnswers(this.id)"><h4 id="">parenthesis</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">curly brackets</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id=""></h4>quotes</button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">square brackets</h4></button>
+        <div id="timer" class="timer">
+            Time: 75
         </div>
-    </div>
+    </header>
 
-    <div id="q3" class="question">
-        <h3>A very useful tool used during development  and debugging for printing content to the debugger is:</h3>
-        <div class="answers">
-            <button id="correct" onClick="addAnswers(this.id)"><h4 id=""></h4>console log</button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">terminal/bash</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id="">for loops</h4></button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id=""></h4>JavaScript</button>
+    <section id="start-container" class="start-quiz">
+        <h1>Welcome to JavaScript Quiz Challenge</h1>
+        <p>
+            You have 75 seconds to try to get the highest score by answering five
+            series of JavaScript questions. Incorrect answers will penalize your
+            time by ten seconds. Your total score will be your time after you
+            answer the last question. Click start when you are ready.
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
         </div>
-    </div>
-    <div id="q4" class="question">
-        <h3>String value must be enclosed within _______ when being assigned to variables.</h3>
-        <div class="answers">
-            <button id="correct" onClick="addAnswers(this.id)"><h4 id=""></h4>quotes</button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id=""></h4>commas</button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id=""></h4>curly brackets</button>
-            <button id="incorrect" onClick="addAnswers(this.id)"><h4 id=""></h4>parenthesis</button>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
         </div>
-    </div>
-    <div class="results">
-        <h3 id="results"></h3>
-    </div>
-    <div class="leaderboard">
-        <h1>Recent Score: <span id="highScore"></span><span id="name"></span></h1>
-    </div>
-    <script src="assets/js/app.js">
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </section>
 
-    </script>
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
 
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
 
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>
+
