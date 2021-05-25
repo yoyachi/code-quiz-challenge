@@ -1,12 +1,30 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(127, 166, 197);
+    border-radius : 50%;
+    padding : 5% 10% 0 10%;
+    
 }
 
 .intro {
     
-    border-color : blue;
-    padding : 5% 10% 0 10%;
-    
 
+}
+
+.startBtn {
+    background-color: rgb(243, 245, 247);
+    border-radius: 10%;
+    border: none;
 }
