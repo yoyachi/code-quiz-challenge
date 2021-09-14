@@ -36,6 +36,7 @@ button {
 
 button:hover {
 	opacity: .8;
+  color: rgb(199, 59, 169);
 }
 
 .startBtn {
