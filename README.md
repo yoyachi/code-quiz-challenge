@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a quiz based on JavaScrip fundamentals that stores high scores, So you would be able to compare your progress.  First, you will click the star button. A timer would start, and a question would pop up. When wrong answer, you would have points subtracted from the clock. Game is over when timer riches 0. Your initials on name and score would be save.
+This project is a quiz challenge based on JavaScrip fundamentals that stores high scores, so you would be able to compare your progress.  First, you will click the star button. A timer would start, and a question would pop up. When wrong answer, you would have points subtracted from the clock. Game is over when timer riches 0. Your initials on name and score would be save.
 
 ## Technologies Used
 
